@@ -66,14 +66,14 @@ def clock():
 				time.sleep(1)
 				click(1250, 733)
 				time.sleep(2)
-				powrot()
+				get_back()
 			elif(color_if_end == color_end and back == 1):
 				print("back to exit after fight")
 				back = 0
 				time.sleep(1)
 				click(1250, 733)
 				time.sleep(2)
-				powrot() 
+				get_back() 
 				return True
 			elif(color_if_end == color_end):
 				print("exit")
@@ -132,7 +132,7 @@ def fight_spider():
 		if clock(): 
 			print("return_fight")
 			return
-def powrot():
+def get_back():
 	global back
 	back = 1
 	while True:
